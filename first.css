@@ -1,0 +1,13 @@
+.first {
+  /* 메인 첫번째 화면 */
+  /* 차지할 공간 좌우 100%, 상하 90% */
+  width: 100vw;
+  height: 90vh;
+
+  /* 배경을 사진으로 채움*/
+  /* 배경사진 중앙화 */
+  background-image: url(pic.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+}

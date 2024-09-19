@@ -1,0 +1,71 @@
+header {
+  /* 헤더 */
+  /* 좌우 공간 100% */
+  width: 100vw;
+
+  /* 스크롤 화면 top에 고정 */
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+
+  /* 상하 25px 상자 생성*/
+  padding: 20px 0;
+
+  background-color: rgb(205, 255, 205);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  /* 컨테이너 내부 위치 정렬 방향은 세로로 중앙에 배치 */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navigation {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  /* flex 속성 컨테이너 */
+  /* 정렬 방향 세로, 모든 컨테이너가 y축 고르게 분포 */
+  /* 모든 컨테이너가 x축 가운데 분포 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  font-family: "TTLaundryGothicB";
+  color: rgb(241, 93, 138);
+}
+
+.navigation__left {
+  /* 왼쪽에 설정할 컨테이너 */
+  font-size: 30px;
+  gap: 60px;
+}
+
+.navigation__right {
+  /* 오른쪽에 설정할 컨테이너 */
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  gap: 20px;
+}
+
+.navigation__right > li {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.navigation__right > li:hover {
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
